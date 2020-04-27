@@ -1,0 +1,57 @@
+.viewRecipeContent {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  .receipeContainer {
+    width: 70%;
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  h1 {
+    font-family: "lato-bold";
+    letter-spacing: 5px;
+    margin-top: 225px;
+  }
+
+  p {
+    font-family: "caveat-regular";
+    font-size: 110%;
+    letter-spacing: 4px;
+    margin-left: 10px;
+  }
+}
+
+h2 {
+  font-family: "lato-bold";
+  letter-spacing: 5px;
+  margin-bottom: 20px;
+}
+
+.recipeBottom {
+  margin-bottom: 200px;
+}
+
+.recipeTopper {
+  display: flex;
+  margin-top: 150px;
+}
+
+//.recipeTopText {
+// display: inline;
+//}
+
+.editRecipeBtn {
+  margin-top: 20px;
+  width: 158px;
+  height: 52px;
+  background: #ffd972 0% 0% no-repeat padding-box;
+  box-shadow: 0px 10px 6px #00000029;
+  border-radius: 26px;
+  font-family: "caveat-regular";
+  font-size: 20px;
+  cursor: pointer;
+}

@@ -1,0 +1,64 @@
+@font-face {
+  font-family: "caveat-bold";
+  src: url("../css/fonts/Caveat-Bold.ttf");
+}
+@font-face {
+  font-family: "lato-light";
+  src: url("../css/fonts/Lato-Light.ttf");
+}
+
+@font-face {
+  font-family: "lato-light-italic";
+  src: url("../css/fonts/Lato-LightItalic.ttf");
+}
+
+.contentHome {
+  height: 100vh;
+  background-image: linear-gradient(
+      rgba(242, 92, 84, 0.5),
+      rgba(242, 92, 84, 0.5)
+    ),
+    url("../images/hero.jpg");
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.yellowCircle {
+  font-family: "caveat-bold";
+  display: flex;
+  height: 357.58px;
+  width: 357.58px;
+  background-color: #ffd972;
+  border-radius: 50%;
+  z-index: 5;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  p {
+    padding: 10px;
+    font-family: "lato-light";
+  }
+}
+
+.pinkCircle {
+  display: flex;
+  z-index: 2;
+  margin-left: -60px;
+  margin-bottom: 300px;
+  height: 167.88px;
+  width: 167.88px;
+  background-color: #fcbcb8;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: "lato-light-italic";
+  font-size: 9pt;
+  padding: 2;
+}

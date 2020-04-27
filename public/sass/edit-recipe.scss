@@ -1,0 +1,65 @@
+@font-face {
+  font-family: "lato-light";
+  src: url("../css/fonts/Lato-Light.ttf");
+}
+
+input[type="text"] {
+  font-family: "lato-light";
+  font-size: 20px;
+  letter-spacing: 2px;
+  text-align: left;
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 4px solid black;
+  margin-bottom: 20px;
+}
+
+.mainContentEditRecipeE {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  p {
+    font-family: "lato-light";
+    font-size: "20px";
+  }
+}
+
+.editContainer {
+  margin-top: 150px;
+  margin-bottom: 10px;
+  width: 80%;
+}
+
+.bottomEditSaveButton {
+  margin-bottom: 150px;
+}
+
+.editSaveData {
+  margin-left: 170px;
+  margin-right: 20px;
+  width: 158px;
+  height: 52px;
+  background: #efa7a7 0% 0% no-repeat padding-box;
+  box-shadow: 0px 10px 6px #00000029;
+  border-radius: 26px;
+  font-family: "caveat-regular";
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.deleteData {
+  width: 158px;
+  height: 52px;
+  background: #ffd972 0% 0% no-repeat padding-box;
+  box-shadow: 0px 10px 6px #00000029;
+  border-radius: 26px;
+  font-family: "caveat-regular";
+  font-size: 20px;
+  cursor: pointer;
+}

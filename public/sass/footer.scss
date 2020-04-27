@@ -1,0 +1,28 @@
+@font-face {
+  font-family: "lato-light-italic";
+  src: url("../css/fonts/Lato-LightItalic.ttf");
+}
+
+#footer {
+  font-family: lato-light-italic;
+  padding: 3rem 5rem;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+
+  .rightfooter {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+  }
+
+  .rightfooter img {
+    width: 19px;
+    margin-left: 4rem;
+  }
+}

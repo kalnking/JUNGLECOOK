@@ -1,0 +1,103 @@
+@font-face {
+  font-family: "lato-light";
+  src: url("../css/fonts/Lato-Light.ttf");
+}
+@font-face {
+  font-family: "lato-bold";
+  src: url("../css/fonts/Lato-Bold.ttf");
+}
+
+.browseContent {
+  height: 100vh;
+  background-image: linear-gradient(
+      90deg,
+      rgba(167, 232, 189, 0.6),
+      rgba(167, 232, 189, 0.6)
+    ),
+    url("../images/recipe-hero.jpg");
+  background-position: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 100px;
+}
+
+.recipes {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+
+  .recipeBox {
+    margin-top: 10px;
+    padding: 10px;
+    display: flex;
+    flex-wrap: nowrap;
+
+    .rPLeft {
+      width: 300px;
+      height: 263px;
+      background-image: url(../img/recipe-burger.jpg);
+      background-size: cover;
+      background-position: 50%;
+      border-radius: 24px;
+    }
+
+    .rPRight {
+      width: 224px;
+      height: 263px;
+      background-color: white;
+      border-radius: 24px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+
+    .name {
+      text-decoration: underline;
+      padding: 10px;
+      font-size: 18px;
+      text-align: center;
+      font-family: "lato-bold";
+      letter-spacing: 1.5px;
+    }
+
+    .recipeText {
+      width: 80%;
+      display: flex;
+      align-items: left;
+      flex-direction: column;
+      font-family: "lato-light";
+      font-size: 10px;
+    }
+  }
+}
+
+.timeServingsContainer {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+
+  .timeP {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .timeImages {
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+
+    flex-direction: column;
+    margin-right: 20px;
+  }
+}

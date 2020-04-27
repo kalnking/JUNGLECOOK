@@ -1,0 +1,423 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html,
+body {
+  height: 100%; }
+
+h1 h2 h3 h4 h5 h6 p {
+  margin-bottom: 16px; }
+
+@font-face {
+  font-family: "caveat-regular";
+  src: url("../css/fonts/Caveat-Regular.ttf"); }
+
+.logo {
+  position: absolute;
+  top: 38px;
+  left: 50px;
+  width: 168px;
+  height: 55px;
+  z-index: 99; }
+
+.nav-holder {
+  font-family: caveat-regular;
+  position: absolute;
+  top: 38px;
+  right: 50px;
+  height: 52px;
+  width: 600px;
+  z-index: 99;
+  display: flex;
+  justify-content: space-around; }
+
+.loginSelect {
+  width: 158px;
+  height: 52px;
+  background: #ffd972 0% 0% no-repeat padding-box;
+  box-shadow: 0px 10px 6px #00000029;
+  border-radius: 26px;
+  text-align: center;
+  padding: 10px; }
+
+a {
+  text-decoration: none;
+  font-size: 25px; }
+
+.bars {
+  z-index: 100;
+  position: absolute;
+  top: 55px;
+  right: 50px;
+  display: none;
+  cursor: pointer; }
+
+@media all and (max-width: 758px) {
+  .nav-holder {
+    display: none;
+    background-color: green;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    flex-direction: column-reverse;
+    justify-content: space-around;
+    align-items: center; }
+  .bars {
+    display: block; } }
+
+@font-face {
+  font-family: "caveat-bold";
+  src: url("../css/fonts/Caveat-Bold.ttf"); }
+
+@font-face {
+  font-family: "lato-light";
+  src: url("../css/fonts/Lato-Light.ttf"); }
+
+@font-face {
+  font-family: "lato-light-italic";
+  src: url("../css/fonts/Lato-LightItalic.ttf"); }
+
+.contentHome {
+  height: 100vh;
+  background-image: linear-gradient(rgba(242, 92, 84, 0.5), rgba(242, 92, 84, 0.5)), url("../images/hero.jpg");
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative; }
+
+.yellowCircle {
+  font-family: "caveat-bold";
+  display: flex;
+  height: 357.58px;
+  width: 357.58px;
+  background-color: #ffd972;
+  border-radius: 50%;
+  z-index: 5;
+  justify-content: center;
+  align-items: center;
+  text-align: center; }
+  .yellowCircle p {
+    padding: 10px;
+    font-family: "lato-light"; }
+
+.pinkCircle {
+  display: flex;
+  z-index: 2;
+  margin-left: -60px;
+  margin-bottom: 300px;
+  height: 167.88px;
+  width: 167.88px;
+  background-color: #fcbcb8;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: "lato-light-italic";
+  font-size: 9pt;
+  padding: 2; }
+
+@font-face {
+  font-family: "lato-light-italic";
+  src: url("../css/fonts/Lato-LightItalic.ttf"); }
+
+#footer {
+  font-family: lato-light-italic;
+  padding: 3rem 5rem;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  z-index: 100;
+  width: 100%; }
+  #footer .rightfooter {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit; }
+  #footer .rightfooter img {
+    width: 19px;
+    margin-left: 4rem; }
+
+@font-face {
+  font-family: "lato-light";
+  src: url("../css/fonts/Lato-Light.ttf"); }
+
+@font-face {
+  font-family: "lato-bold";
+  src: url("../css/fonts/Lato-Bold.ttf"); }
+
+@font-face {
+  font-family: "lato-light-italic";
+  src: url("../css/fonts/Lato-LightItalic.ttf"); }
+
+@font-face {
+  font-family: "caveat-regular";
+  src: url("../css/fonts/Caveat-Regular.ttf"); }
+
+@font-face {
+  font-family: "caveat-bold";
+  src: url("../css/fonts/Caveat-Bold.ttf"); }
+
+#contentWrapper {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+@font-face {
+  font-family: "lato-light";
+  src: url("../css/fonts/Lato-Light.ttf"); }
+
+@font-face {
+  font-family: "lato-bold";
+  src: url("../css/fonts/Lato-Bold.ttf"); }
+
+.browseContent {
+  height: 100vh;
+  background-image: linear-gradient(90deg, rgba(167, 232, 189, 0.6), rgba(167, 232, 189, 0.6)), url("../images/recipe-hero.jpg");
+  background-position: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 100px; }
+
+.recipes {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  padding: 0;
+  margin: 0;
+  list-style: none; }
+  .recipes .recipeBox {
+    margin-top: 10px;
+    padding: 10px;
+    display: flex;
+    flex-wrap: nowrap; }
+    .recipes .recipeBox .rPLeft {
+      width: 300px;
+      height: 263px;
+      background-image: url(../img/recipe-burger.jpg);
+      background-size: cover;
+      background-position: 50%;
+      border-radius: 24px; }
+    .recipes .recipeBox .rPRight {
+      width: 224px;
+      height: 263px;
+      background-color: white;
+      border-radius: 24px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column; }
+    .recipes .recipeBox .name {
+      text-decoration: underline;
+      padding: 10px;
+      font-size: 18px;
+      text-align: center;
+      font-family: "lato-bold";
+      letter-spacing: 1.5px; }
+    .recipes .recipeBox .recipeText {
+      width: 80%;
+      display: flex;
+      align-items: left;
+      flex-direction: column;
+      font-family: "lato-light";
+      font-size: 10px; }
+
+.timeServingsContainer {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap; }
+  .timeServingsContainer .timeP {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px; }
+  .timeServingsContainer .timeImages {
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-right: 20px; }
+
+@font-face {
+  font-family: "lato-light";
+  src: url("../css/fonts/Lato-Light.ttf"); }
+
+@font-face {
+  font-family: "lato-light-italic";
+  src: url("../css/fonts/Lato-LightItalic.ttf"); }
+
+input[type="text"] {
+  font-family: "lato-light";
+  font-size: 20px;
+  letter-spacing: 2px;
+  text-align: left;
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 2px solid black;
+  margin-bottom: 30px; }
+
+.recipeContainers {
+  margin-bottom: 10px;
+  width: 80%; }
+
+.recipeTop {
+  margin-top: 150px; }
+
+#recipeContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  #recipeContent p {
+    font-size: 25px; }
+
+.saveData {
+  margin-bottom: 150px;
+  width: 158px;
+  height: 52px;
+  background: #efa7a7 0% 0% no-repeat padding-box;
+  box-shadow: 0px 10px 6px #00000029;
+  border-radius: 26px;
+  font-family: "caveat-regular";
+  font-size: 20px;
+  cursor: pointer; }
+
+.instructAddInput {
+  background: #efa7a7 0% 0% no-repeat padding-box;
+  border-radius: 50%;
+  font-size: 30px;
+  cursor: pointer;
+  width: 38px;
+  height: 38px;
+  justify-content: center;
+  font-family: "lato-light";
+  float: right;
+  color: white; }
+
+.ingredAddInput {
+  background: #efa7a7 0% 0% no-repeat padding-box;
+  border-radius: 50%;
+  font-size: 30px;
+  cursor: pointer;
+  width: 38px;
+  height: 38px;
+  justify-content: center;
+  font-family: "lato-light";
+  float: right;
+  color: white; }
+
+.viewRecipeContent {
+  width: 100%;
+  display: flex;
+  justify-content: center; }
+  .viewRecipeContent .receipeContainer {
+    width: 70%;
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+  .viewRecipeContent h1 {
+    font-family: "lato-bold";
+    letter-spacing: 5px;
+    margin-top: 225px; }
+  .viewRecipeContent p {
+    font-family: "caveat-regular";
+    font-size: 110%;
+    letter-spacing: 4px;
+    margin-left: 10px; }
+
+h2 {
+  font-family: "lato-bold";
+  letter-spacing: 5px;
+  margin-bottom: 20px; }
+
+.recipeBottom {
+  margin-bottom: 200px; }
+
+.recipeTopper {
+  display: flex;
+  margin-top: 150px; }
+
+.editRecipeBtn {
+  margin-top: 20px;
+  width: 158px;
+  height: 52px;
+  background: #ffd972 0% 0% no-repeat padding-box;
+  box-shadow: 0px 10px 6px #00000029;
+  border-radius: 26px;
+  font-family: "caveat-regular";
+  font-size: 20px;
+  cursor: pointer; }
+
+@font-face {
+  font-family: "lato-light";
+  src: url("../css/fonts/Lato-Light.ttf"); }
+
+input[type="text"] {
+  font-family: "lato-light";
+  font-size: 20px;
+  letter-spacing: 2px;
+  text-align: left;
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 4px solid black;
+  margin-bottom: 20px; }
+
+.mainContentEditRecipeE {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .mainContentEditRecipeE p {
+    font-family: "lato-light";
+    font-size: "20px"; }
+
+.editContainer {
+  margin-top: 150px;
+  margin-bottom: 10px;
+  width: 80%; }
+
+.bottomEditSaveButton {
+  margin-bottom: 150px; }
+
+.editSaveData {
+  margin-left: 170px;
+  margin-right: 20px;
+  width: 158px;
+  height: 52px;
+  background: #efa7a7 0% 0% no-repeat padding-box;
+  box-shadow: 0px 10px 6px #00000029;
+  border-radius: 26px;
+  font-family: "caveat-regular";
+  font-size: 20px;
+  cursor: pointer; }
+
+.deleteData {
+  width: 158px;
+  height: 52px;
+  background: #ffd972 0% 0% no-repeat padding-box;
+  box-shadow: 0px 10px 6px #00000029;
+  border-radius: 26px;
+  font-family: "caveat-regular";
+  font-size: 20px;
+  cursor: pointer; }
